@@ -1,20 +1,31 @@
-<div class="min-h-screen flex flex-col">
-  <header class="h-12 px-3 bg-indigo-300 text-white flex justify-between items-center">
-    <span>Echo</span>
+<div class="min-h-screen flex flex-col bg-gray-100">
+  <header
+    class="h-16 px-6 bg-gradient-to-r from-green-400 via-blue-500 to-purple-700 text-white flex justify-between items-center shadow-lg"
+  >
+    <!-- <h1
+      class="text-lg font-bold tracking-wide bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-pulse"
+    >
+      Echo: Your Words, Amplified
+    </h1> -->
+    <h1 class="text-lg font-bold tracking-wide text-white relative">
+      Echo: Your Words, <span class="wave-animation">Amplified</span>
+    </h1>
     <nav>
-      <ul class="flex gap-4">
-        <li class="hover:underline hover:underline-offset-4">
+      <ul class="flex gap-6 text-base font-medium">
+        <li
+          class="hover:underline hover:underline-offset-4 transition duration-200"
+        >
           <a routerLink="/home">Home</a>
         </li>
-        <li class="hover:underline hover:underline-offset-4">
+        <li
+          class="hover:underline hover:underline-offset-4 transition duration-200"
+        >
           <a routerLink="/about">About</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="px-3 py-4">
+  <main class="flex-grow px-6 py-8">
     <router-outlet />
   </main>
 </div>
-
-
