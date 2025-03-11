@@ -18,7 +18,7 @@ export class UserService {
     },
     {
       headers: { 'Content-Type': 'application/json' }
-    }
+    } 
   );
   }
 
