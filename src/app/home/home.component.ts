@@ -31,6 +31,11 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  commentTrackBy(comment: Comment){
+    return comment._id;
+  }
+
+
   ngOnInit(): void {
     this.getComments();
   }
