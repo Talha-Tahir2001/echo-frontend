@@ -13,7 +13,7 @@ export class UserService {
   localStorageKey = 'echo_user';
 
   createUser(name:string){
-    return this.http.post<User>(`${environment.PROD_BACKEND_URL}/users`, {
+    return this.http.post<User>(`${environment.PROD_BACKEND_URL}`, {
       name,
     });
   }

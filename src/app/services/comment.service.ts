@@ -18,7 +18,7 @@ export class CommentService {
   http = inject(HttpClient);
 
   getComments(parentId: string = '') {
-    let url = `${environment.PROD_BACKEND_URL}/comments`; 
+    let url = `${environment.PROD_BACKEND_URL}`; 
     if (parentId) {
       url += `?parentId=${parentId}`;
     }
@@ -27,7 +27,7 @@ export class CommentService {
 
   createComment(comment: CreateCommentDto) {
     return this.http.post<Comment>(
-      `${environment.PROD_BACKEND_URL}/comments`,
+      `${environment.PROD_BACKEND_URL}`,
       comment
     );
   }
