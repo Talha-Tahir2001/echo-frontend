@@ -15,7 +15,7 @@ const envFile = `export const environment = {
     PROD_BACKEND_URL: '${process.env.PROD_BACKEND_URL}',    
 };
 `;
-
+console.log(envFile)
 // Define the target path
 const targetPath = join(__dirname, './src/environments/environment.ts');
 
