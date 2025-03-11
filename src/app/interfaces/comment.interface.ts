@@ -4,5 +4,6 @@ export interface Comment {
     text : string;
     parent : Comment | null;
     user: User;
-    id: string;    
+    _id: string;   
+    createdAt: string; 
 }
