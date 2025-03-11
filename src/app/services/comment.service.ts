@@ -29,9 +29,6 @@ export class CommentService {
     return this.http.post<Comment>(
       `${environment.PROD_BACKEND_URL}/comments`,
       comment
-    ),
-    {
-      headers: { 'Content-Type': 'application/json' }
-    }
+    )
   }
 }
