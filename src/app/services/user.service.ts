@@ -13,9 +13,13 @@ export class UserService {
   localStorageKey = 'echo_user';
 
   createUser(name:string){
-    return this.http.post<User>(`${environment.PROD_BACKEND_URL}`, {
+    return this.http.post<User>(`${environment.PROD_BACKEND_URL}/users`, {
       name,
-    });
+    },
+    {
+      headers: { 'Content-Type': 'application/json' }
+    }
+  );
   }
 
   saveUserToStorage(user:User){
